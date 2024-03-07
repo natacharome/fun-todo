@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun todo</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Overpass Mono' rel='stylesheet'>
+</head>
+
+<body>
+    <main class="container">
+        <section class="container__list">
+            <h2>Mes dernières listes</h2>
+            <div class="container__list_detail">
+                <div class="container__list_date">
+                    03 janvier 2023
+                </div>
+                <div class="container__list_date">
+                    03 janvier 2023
+                </div>
+                <div class="container__list_date">
+                    03 janvier 2023
+                </div>
+                <div class="container__list_date">
+                    03 janvier 2023
+                </div>
+                <div class="container__list_date">
+                    03 janvier 2023
+                </div>
+            </div>
+            <div class="container__bottom">
+                <button class="container__button dialog__open">Ajouter une liste</button>
+            </div>
+        </section>
+        <section class="container__display">
+            <h3>Nous sommes </h3>
+            <h4></h4>
+        </section>
+    </main>
+    <dialog class="dialog">
+        <h5>Ajouter une tâche</h5>
+        <label for="name">Nom de la tâche</label>
+        <input placeholder="Faire une todo list" type="text" id="name" name="name" required minlength="4" maxlength="8"
+            size="10" />
+        <img class="dialog__close" src="close.svg" width="30" height="30" alt="dialog_close" />
+        <div class="dialog__add">
+            <button class="dialog__add_btn">Enregistrer</button>
+        </div>
+    </dialog>
+    <script src="./utils/modal.js"></script>
+    <script src="./utils/blink.js"></script>
+    <script src="./utils/capitalize.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

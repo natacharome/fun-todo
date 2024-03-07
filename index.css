@@ -1,0 +1,185 @@
+:root {
+    --background: #E7E6E0;
+    --primary: #50D99B;
+    --secondary: #EEEEEE;
+    --accent: #D3D3D3;
+    --text: #131212;
+    --red: #FF5050;
+    --white: #FFFFFF;
+    --grey: #CCCBC7;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    font-family: 'Overpass Mono';
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .container__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--white);
+        height: 500px;
+        border-radius: 30px;
+    }
+
+    .container__list>h2 {
+        padding: 30px;
+    }
+
+    .container__list_detail {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .container__list_date {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0px;
+        margin-bottom: 10px;
+    }
+
+    .container__list_date>button {
+        background-color: white;
+        cursor: pointer;
+        border: none;
+        width: 100%;
+        border-radius: 10px;
+        font-family: 'Overpass Mono';
+        transition: all 0.2s ease-out;
+    }
+
+    .container__list_date:hover {
+        background-color: var(--accent);
+    }
+
+    .container__list_date:active {
+        background-color: var(--accent);
+    }
+
+    .container__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .container__button {
+        background-color: var(--primary);
+        cursor: pointer;
+        border: none;
+        padding: 20px;
+        border-radius: 10px;
+        font-family: 'Overpass Mono';
+        width: 90%;
+        transition: all 0.2s ease-out;
+    }
+
+    .container__button:hover {
+        background-color: var(--white);
+        border: 1px solid var(--primary);
+    }
+
+    .container__display {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        padding: 50px;
+        margin-left: 60px;
+    }
+
+    .container__display>h4 {
+        padding: 0;
+        margin: 0;
+        color: var(--grey);
+        font-size: 157px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column-reverse;
+        height: 100vh;
+        justify-content: space-around;
+
+        .container__display {
+            height: 150px;
+            text-align: center;
+            margin-left: 0px;
+        }
+
+        .container__display>h4 {
+            font-size: 70px;
+
+        }
+    }
+}
+
+dialog {
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+dialog p {
+    margin-bottom: 10px;
+}
+
+dialog input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+dialog label {
+    font-size: 10px;
+    color: var(--grey);
+}
+
+
+dialog .dialog__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+dialog .dialog__add {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+dialog .dialog__add_btn {
+    background-color: var(--primary);
+    cursor: pointer;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Overpass Mono';
+    transition: all 0.2s ease-out;
+}
