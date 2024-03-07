@@ -1,6 +1,6 @@
 # Fun todo app in vanilla JS
 
-I wanted to create a fun todo app, not like the other ones. I have a intern under my responsability that learn web developement and I wanted to gave him a fun exercice. So what's best than to make it myself before gaving it to him ?
+I wanted to create a fun to-do app, unlike the others. I have an intern under my responsibility who is learning web development, and I wanted to give him a fun exercise. So what's better than to create it myself before giving it to him?
 
 Design made by myself in Figma.
 
